@@ -207,6 +207,6 @@ source install/setup.bash
 
 ### Running
 inside the docker run
-    ```sh
-    ros2 launch atb_ublox_gps docker_final_launch.py
-    ```
+```sh
+ros2 launch atb_ublox_gps docker_final_launch.py
+```
