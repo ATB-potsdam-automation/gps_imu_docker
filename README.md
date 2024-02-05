@@ -40,7 +40,7 @@ docker run -it nav-system
 
 switch into that workspace
 ```sh
-cd /home/ros2_ws
+cd /opt/ros/overlay_ws/
 ```
 
 source the workspace (install space should have been created during build)
@@ -52,8 +52,7 @@ source install/setup.bash
 
 1. change the configuration from IMU
     ```sh
-    cd
-    nano xsens_mti_node.yaml
+    nano /opt/ros/overlay_ws/src/atb_ublox_gps/config/xsens_mti_node.yaml
     ```
     ```yaml
     /**:
@@ -108,8 +107,7 @@ source install/setup.bash
 3. change the configuration from the gps-base and rover
 
     ```sh
-    cd
-    nano zed_f9p_base.yaml
+    nano /opt/ros/overlay_ws/src/atb_ublox_gps/config/zed_f9p_base.yaml
     ```
     ```yaml
     base/gps_node:
@@ -133,8 +131,7 @@ source install/setup.bash
         all: False 
     ```
     ```sh
-    cd
-    nano zed_f9p_rover.yaml
+    nano /opt/ros/overlay_ws/src/atb_ublox_gps/config/zed_f9p_rover.yaml
     ```
     ```yaml
     rover/gps_node:
@@ -163,8 +160,7 @@ source install/setup.bash
 4. change the configuration from the ntrip-client
 
   ```sh
-  cd 
-  nano 
+  nano /opt/ros/overlay_ws/src/atb_ublox_gps/config/params.yaml
   ```
 
    ```yaml
